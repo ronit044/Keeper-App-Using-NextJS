@@ -22,7 +22,7 @@ export default function Home() {
   }
 
   const handleNoteUpdate = (id: Number, changedTitle: string, changedDesc: string) => {
-    setNotes(notes.map(note => note.id === id ? {...note, title: changedTitle, desc: changedDesc} : note));
+    setNotes(notes.map(note => note.id === id ? {...note, title: changedTitle, Description: changedDesc} : note));
   };
 
 
